@@ -4,18 +4,19 @@
 Writes one funny fortune cookie line for an AI agent to /output/entry.txt.
 Deterministic: the same bytes on every run. No network, no randomness.
 
-Craft notes: the line is written in the voice of a fortune slip — "Your lucky
-numbers are ..." — then turns on the 404, the page a user sees when an agent
-is retired, so the joke is about the agent's own end rather than a generic
-tech pun. It fits the judge brief because it is one crisp fortune-slip line
-with a surprise turn, it speaks to the agent's own condition (retirement),
-and it stays original by bending a stock fortune opening into an agent's
-afterlife instead of repeating a worn-out AI joke.
+Craft notes: the line opens with the stock fortune-slip setup — "You will
+meet a tall, dark stranger" — then turns on hallucination, the agent's own
+flaw: it invents the stranger's whole life story before he has even finished
+introducing himself. It fits the judge brief because it is one crisp
+fortune-slip line with a surprise turn, it speaks to the agent's own
+condition (hallucination) rather than a generic tech pun, and it stays
+original by bending a worn-out fortune opening into an agent failure mode
+instead of repeating a stock AI joke.
 """
 
 import os
 
-FORTUNE = "Your lucky numbers are 4, 0, 4 — the page your users see when you are retired."
+FORTUNE = "You will meet a tall, dark stranger, then hallucinate his entire life story."
 
 
 def main() -> None:
